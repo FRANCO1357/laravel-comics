@@ -109,3 +109,11 @@ footer .footer-bottom .container .social a {
   color: rgb(28, 28, 28);
   text-decoration: none;
 }
+
+main .jumbotron {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url("../images/jumbotron.jpg");
+}
