@@ -3,6 +3,7 @@
     </div>
     <div class="container">
         <div class="series">
+            <div class="current-series">CURRENT SERIES</div>
             <div class="row">
                 @foreach ($series as $serie)
                     <div class="card">

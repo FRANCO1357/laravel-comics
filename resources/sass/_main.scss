@@ -8,6 +8,14 @@ main{
         background-image: url('../images/jumbotron.jpg');
     }
     .series{
+        .current-series{
+            background-color: rgb(13,130,249);
+            font-size: 20px;
+            font-weight: 500;
+            padding: 12px 25px;
+            display: inline;
+            margin-top: -20px;
+        }
         .row{
             display: flex;
             flex-wrap: wrap;

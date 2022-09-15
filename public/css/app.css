@@ -120,6 +120,14 @@ main .jumbotron {
   background-size: cover;
   background-image: url("../images/jumbotron.jpg");
 }
+main .series .current-series {
+  background-color: rgb(13, 130, 249);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 25px;
+  display: inline;
+  margin-top: -20px;
+}
 main .series .row {
   display: flex;
   flex-wrap: wrap;
