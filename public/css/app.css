@@ -47,6 +47,9 @@ header .container ul li a:hover {
   color: rgb(13, 130, 249);
 }
 
+footer {
+  background-image: url("../images/footer-bg.jpg");
+}
 footer .footer-top {
   color: white;
 }
