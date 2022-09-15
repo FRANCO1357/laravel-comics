@@ -1,0 +1,38 @@
+header{
+    background-color: white;
+    height: 100px;
+
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            height: 70px;
+        }
+
+        ul{
+            display: flex;
+
+            li{
+                list-style-type: none;
+                color: rgb(19, 19, 19);
+
+                a{
+                    text-decoration: none;
+                    margin: 0 10px;
+                    color: black;
+
+                    &:visited{
+                        color: black;
+                    }
+
+                    &:hover{
+                        color: rgb(13,130,249);
+                    }
+                }
+            }
+        }
+    }
+}
