@@ -27,5 +27,42 @@ main{
                 }
             }
         }
+
+        a{
+            display: inline-block;
+            background-color: rgb(13,130,249);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 20px 0;
+        }
+    }
+
+    .buy-comics{
+        background-color: rgb(13,130,249);
+        padding: 20px;
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+
+            .card{
+                width: 20%;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+
+
+                img{
+                    width: 15%;
+                }
+
+                p{
+                    width: 85%;
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+            }
+        }
     }
 }
