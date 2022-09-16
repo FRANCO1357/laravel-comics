@@ -3,9 +3,11 @@
 @section('main-content')
     <div class="jumbotron">
     </div>
+    <div class="current-series">
+        <div class="card"></div>
+    </div>
     <div class="container">
         <div class="series">
-            <div class="current-series">CURRENT SERIES</div>
             <div class="row">
                 @foreach ($series as $serie)
                     <div class="card">

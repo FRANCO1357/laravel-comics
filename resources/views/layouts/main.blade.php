@@ -11,7 +11,9 @@
 <body>
 
 @include('includes.header')
-@yield('main-content')
+<main id="{{ Route::current()->getName() }}">
+    @yield('main-content')
+</main>
 @include('includes.footer')
 
     
