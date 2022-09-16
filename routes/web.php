@@ -20,5 +20,6 @@ Route::get('/', function () {
 
 Route::get('/show', function () {
     $series = config('series');
-    return view('show', compact('series'));
+    $serie = $series[0];
+    return view('show', compact('serie'));
 })->name('show');

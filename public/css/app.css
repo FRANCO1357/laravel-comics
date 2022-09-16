@@ -187,34 +187,89 @@ footer .footer-bottom .container .social a {
 }
 #show .current-series {
   background-color: rgb(13, 130, 249);
-  height: 50px;
+  height: 60px;
   font-size: 20px;
   font-weight: 500;
   margin-top: -20px;
 }
-#show .series .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px 0;
+#show .current-series .container {
+  position: relative;
 }
-#show .series .row .card {
-  width: 16.6666666667%;
-  padding: 10px;
-  margin-top: 30px;
+#show .current-series .container .card {
+  position: absolute;
+  bottom: -40px;
+  background-color: red;
+  border: 1px solid white;
 }
-#show .series .row .card img {
-  max-width: 100%;
+#show .current-series .container .card img {
+  display: block;
+  position: relative;
 }
-#show .series .row .card p {
-  margin-top: 10px;
+#show .current-series .container .card .type {
+  position: absolute;
+  top: 0;
+  background-color: #0EA9D8;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 100;
 }
-#show .series a {
-  display: inline-block;
-  background-color: rgb(13, 130, 249);
+#show .current-series .container .card a {
+  position: absolute;
+  bottom: 0;
+  background-color: #0EA9D8;
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 100;
+}
+#show .top-info {
+  padding: 80px 0;
+  background-color: white;
+  color: rgb(83, 83, 83);
+}
+#show .top-info .container {
+  display: flex;
+}
+#show .top-info .container .info {
+  padding-right: 40px;
+}
+#show .top-info .container .info h2 {
+  color: #023F5E;
+  text-transform: uppercase;
+}
+#show .top-info .container .info .available {
+  background-color: #55BA58;
+  height: 40px;
   margin: 20px 0;
+  display: flex;
+}
+#show .top-info .container .info .available .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  padding: 10px;
+  color: white;
+}
+#show .top-info .container .info .available select {
+  width: 25%;
+  background-color: #55BA58;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+#show .top-info .container .info p {
+  line-height: 30px;
+}
+#show .top-info .container .adv {
+  text-align: end;
+}
+#show .top-info .container .adv img {
+  margin-top: 10px;
 }
 #show .buy-comics {
   background-color: rgb(13, 130, 249);

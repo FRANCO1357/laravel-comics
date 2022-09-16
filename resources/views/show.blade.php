@@ -4,19 +4,33 @@
     <div class="jumbotron">
     </div>
     <div class="current-series">
-        <div class="card"></div>
-    </div>
-    <div class="container">
-        <div class="series">
-            <div class="row">
-                @foreach ($series as $serie)
-                    <div class="card">
-                        <img src="{{ $serie['thumb']}}" alt="">
-                        <p>{{ $serie['series']}}</p>
-                    </div>
-                @endforeach
+        <div class="container">
+            <div class="card">
+                <img src="{{ $serie['thumb'] }}" alt="">
+                <span class="type">{{$serie['type']}}</span>
+                <a href="">VIEW GALLERY</a>
             </div>
-            <a href="#">LOAD MORE</a>
+        </div>
+    </div>
+    <div class="top-info">
+        <div class="container">
+            <div class="info">
+                <h2>{{ $serie['title'] }}</h2>
+                <div class="available">
+                    <div class="price">
+                        <p>U.S. Price: $24.99</p>
+                        <p>AVAILABLE</p>
+                    </div>
+                    <select>
+                        <option value="">Check Availability</option>
+                    </select>
+                </div>
+                <p>{{ $serie['description'] }}</p>
+            </div>
+            <div class="adv">
+                ADVERTISMENT
+                <img src="{{ asset('images/adv.jpg') }}" alt="">
+            </div>
         </div>
     </div>
     <div class="buy-comics">
