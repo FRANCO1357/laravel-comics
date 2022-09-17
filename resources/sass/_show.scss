@@ -108,6 +108,50 @@
         }
     }
 
+    .bottom-info{
+        background-color: #F6F6F6;
+
+        .container{
+            display: flex;
+            padding: 50px 0;
+            color: #023F5E;
+
+            .row{
+                display: flex;
+                border-top: 1px solid lightgray;
+                padding: 10px 0;
+                margin-right: 30px;
+            }
+
+            h3{
+                margin-bottom: 20px;
+            }
+
+            h4{
+                font-size: 14px;
+                width: 250px;
+            }
+
+            a{
+                color: dodgerblue;
+                text-decoration: none;
+            }
+
+            .data{
+                padding: 0 40px;
+                font-size: 14px;
+            }
+
+            .talent{
+                width: 50%;
+            }
+
+            .specs{
+                width: 50%;
+            }
+        }
+    }
+
     .buy-comics{
         background-color: rgb(13,130,249);
         padding: 20px;
