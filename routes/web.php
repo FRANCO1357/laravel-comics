@@ -18,8 +18,13 @@ Route::get('/', function () {
     return view('home', compact('series'));
 })->name('home');
 
-Route::get('/show', function () {
+Route::get('/show/{id}', function ($id) {
     $series = config('series');
-    $serie = $series[0];
-    return view('show', compact('serie'));
+
+    if(!is_numeric($id) || $id < 0 || $id >= count($series)){
+        abort(404);
+    };
+
+    $serie = $series[$id];
+    return view('series.show', compact('serie'));
 })->name('show');

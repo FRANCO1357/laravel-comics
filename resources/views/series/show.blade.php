@@ -51,7 +51,7 @@
                     <div class="data">
                         @foreach ($serie['writers'] as $writer)
                         <a href="#">{{ $writer }}</a>
-                        @if( !$loop->last) , @else . @endif
+                        @if( !$loop->last), @else. @endif
                         @endforeach
                     </div>
                 </div>

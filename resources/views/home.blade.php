@@ -9,12 +9,14 @@
             <div class="row">
                 @foreach ($series as $serie)
                     <div class="card">
-                        <img src="{{ $serie['thumb']}}" alt="">
+                        <a href="{{url('/show/{id}')}}">
+                            <img src="{{ $serie['thumb']}}" alt="">
+                        </a>
                         <p>{{ $serie['series']}}</p>
                     </div>
                 @endforeach
             </div>
-            <a href="#">LOAD MORE</a>
+            <a class="button" href="#">LOAD MORE</a>
         </div>
     </div>
     <div class="buy-comics">
@@ -41,4 +43,5 @@
             </div>
         </div>
     </div>
+
 @endsection
