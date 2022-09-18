@@ -7,12 +7,12 @@
         <div class="series">
             <div class="current-series">CURRENT SERIES</div>
             <div class="row">
-                @foreach ($series as $serie)
+                @foreach ($comics as $comic)
                     <div class="card">
                         <a href="{{url('/show', ['id' => $loop->index])}}">
-                            <img src="{{ $serie['thumb']}}" alt="">
+                            <img src="{{ $comic['thumb']}}" alt="">
                         </a>
-                        <p>{{ $serie['series']}}</p>
+                        <p>{{ $comic['series']}}</p>
                     </div>
                 @endforeach
             </div>

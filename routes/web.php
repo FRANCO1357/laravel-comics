@@ -14,17 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $series = config('series');
-    return view('home', compact('series'));
+    $comics = config('comics');
+    return view('home', compact('comics'));
 })->name('home');
 
 Route::get('/show/{id}', function ($id) {
-    $series = config('series');
+    $comics = config('comics');
 
-    if(!is_numeric($id) || $id < 0 || $id >= count($series)){
+    if(!is_numeric($id) || $id < 0 || $id >= count($comics)){
         abort(404);
     };
 
-    $serie = $series[$id];
-    return view('series.show', compact('serie'));
+    $comic = $comics[$id];
+    return view('comics.show', compact('comic'));
 })->name('show');
