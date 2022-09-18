@@ -10,6 +10,14 @@
                 <span class="type">{{$comic['type']}}</span>
                 <a href="">VIEW GALLERY</a>
             </div>
+            <nav>
+                @isset($prev)
+                    <a class="prev" href="{{url('/show', ['id' => $prev])}}">PREVIOUS</a>
+                @endisset
+                @isset($next)
+                    <a class="next" href="{{url('/show', ['id' => $next])}}">NEXT</a>
+                @endisset
+            </nav>
         </div>
     </div>
     <div class="top-info">
