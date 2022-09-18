@@ -9,7 +9,7 @@
             <div class="row">
                 @foreach ($series as $serie)
                     <div class="card">
-                        <a href="{{url('/show/{id}')}}">
+                        <a href="{{url('/show', ['id' => $loop->index])}}">
                             <img src="{{ $serie['thumb']}}" alt="">
                         </a>
                         <p>{{ $serie['series']}}</p>
